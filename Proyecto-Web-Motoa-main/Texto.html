@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MotoTaller Tarragona | Reparación y Mantenimiento de Motos</title>
+
+    <meta name="description" content="MotoTaller Tarragona: taller especializado en reparación, mantenimiento y personalización de motos en Tarragona. Presupuestos en 24h y mecánicos certificados.">
+    <meta name="keywords" content="taller motos Tarragona, reparación motos, mantenimiento motocicletas, ITV motos Tarragona">
+    <meta name="author" content="MotoTaller Tarragona">
+
+    <link rel="canonical" href="https://www.mototaller-tarragona.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MotoTaller Tarragona | Reparación y Mantenimiento de Motos">
+    <meta property="og:description" content="Taller de motos en Tarragona especializado en reparación, mantenimiento y personalización. Presupuestos en 24h.">
+    <meta property="og:url" content="https://www.mototaller-tarragona.com/">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:image" content="https://www.mototaller-tarragona.com/img/taller.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MotorcycleRepair",
+      "name": "MotoTaller Tarragona",
+      "image": "https://www.mototaller-tarragona.com/img/taller.jpg",
+      "@id": "https://www.mototaller-tarragona.com/",
+      "url": "https://www.mototaller-tarragona.com/",
+      "telephone": "+34 977123456",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Industriales 45",
+        "addressLocality": "Tarragona",
+        "postalCode": "43001",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.1188827,
+        "longitude": 1.2450076
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "priceRange": "€€",
+      "areaServed": {
+        "@type": "City",
+        "name": "Tarragona"
+      }
+    }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Estilos.css">
+    <script src="Scripts.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <section class="barra-superior" aria-label="Barra de contacto rápida">
+            <div class="contenedor">
+                <div class="contenido-barra-superior">
+                    <address class="barra-superior-izquierda">
+                        <a href="tel:977123456">
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                            <span>977 123 456</span>
+                        </a>
+                        <a href="mailto:info@mototaller-tarragona.com">
+                            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            <span>info@mototaller-tarragona.com</span>
+                        </a>
+                    </address>
+                    <div class="barra-superior-derecha">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook MotoTaller Tarragona">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram MotoTaller Tarragona">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube MotoTaller Tarragona">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <div class="contenedor">
+                <div class="contenido-navegacion">
+                    <button class="logotipo" onclick="desplazarASeccion('inicio')">
+                        <span class="icono-logotipo">
+                            <span>M</span>
+                        </span>
+                        <span class="texto-logotipo">
+                            <span class="titulo-logotipo">
+                                <span style="color: white;">Moto</span><span style="color: var(--primario);">Taller</span>
+                            </span>
+                            <span class="subtitulo-logotipo">Tarragona</span>
+                        </span>
+                    </button>
+
+                    <ul class="enlaces-navegacion">
+                        <li><a href="#inicio" onclick="desplazarASeccion('inicio')">Inicio</a></li>
+                        <li><a href="#servicios" onclick="desplazarASeccion('servicios')">Servicios</a></li>
+                        <li><a href="#nosotros" onclick="desplazarASeccion('nosotros')">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" onclick="desplazarASeccion('contacto')">Contacto</a></li>
+                    </ul>
+
+                    <div class="acciones-navegacion">
+                        <form class="caja-busqueda" role="search">
+                            <i class="bi bi-search" aria-hidden="true"></i>
+                            <input type="search" placeholder="Buscar..." aria-label="Buscar en el sitio">
+                        </form>
+                        <button class="boton boton-primario" onclick="desplazarASeccion('contacto')">Contactar</button>
+                    </div>
+
+                    <button class="alternar-menu" onclick="alternarMenu()" aria-label="Abrir o cerrar menú de navegación">
+                        <i id="icono-menu" class="bi bi-list" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <aside class="menu-movil" id="menu-movil" aria-label="Menú móvil">
+                    <a href="#inicio" onclick="desplazarASeccion('inicio')">Inicio</a>
+                    <a href="#servicios" onclick="desplazarASeccion('servicios')">Servicios</a>
+                    <a href="#nosotros" onclick="desplazarASeccion('nosotros')">Sobre Nosotros</a>
+                    <a href="#contacto" onclick="desplazarASeccion('contacto')">Contacto</a>
+                    <button class="boton boton-primario" onclick="desplazarASeccion('contacto')">Contactar</button>
+                </aside>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="heroe">
+            <div class="contenedor">
+                <div class="contenido-heroe">
+                    <p class="insignia">
+                        🔧 Taller especializado en Tarragona
+                    </p>
+                    <h1>
+                        Moto<span style="color: var(--primario);">Taller</span> Tarragona
+                    </h1>
+                    <h2 class="visually-hidden">Reparación, mantenimiento y personalización de motos en Tarragona</h2>
+                    <p>Expertos en reparación, mantenimiento y personalización de motocicletas.</p>
+                    <p>Tu moto en las mejores manos desde 2009.</p>
+                    <div class="botones-heroe">
+                        <button class="boton boton-primario boton-grande" onclick="desplazarASeccion('contacto')">Pedir Presupuesto</button>
+                        <button class="boton boton-contorno boton-grande" onclick="desplazarASeccion('servicios')">Ver Servicios</button>
+                    </div>
+                </div>
+            </div>
+            <button class="indicador-desplazamiento" onclick="desplazarASeccion('estadisticas')" aria-label="Desplazarse a estadísticas">
+                <span>SCROLL</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+            </button>
+        </section>
+
+        <section id="estadisticas" class="estadisticas" aria-label="Estadísticas del taller">
+            <div class="contenedor">
+                <ul class="cuadricula-estadisticas">
+                    <li class="elemento-estadistica">
+                        <p class="valor-estadistica">15+</p>
+                        <p class="etiqueta-estadistica">AÑOS DE EXPERIENCIA</p>
+                    </li>
+                    <li class="elemento-estadistica">
+                        <p class="valor-estadistica">3000+</p>
+                        <p class="etiqueta-estadistica">MOTOS REPARADAS</p>
+                    </li>
+                    <li class="elemento-estadistica">
+                        <p class="valor-estadistica">98%</p>
+                        <p class="etiqueta-estadistica">CLIENTES SATISFECHOS</p>
+                    </li>
+                    <li class="elemento-estadistica">
+                        <p class="valor-estadistica">24h</p>
+                        <p class="etiqueta-estadistica">PRESUPUESTO RÁPIDO</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <div class="contenedor">
+                <header class="encabezado-seccion">
+                    <p class="etiqueta-seccion">NUESTROS SERVICIOS</p>
+                    <h2 class="titulo-seccion">Todo lo que tu moto necesita</h2>
+                    <p class="descripcion-seccion">
+                        Ofrecemos servicios integrales para todo tipo de motocicletas, desde scooters hasta motos de alta cilindrada.
+                    </p>
+                </header>
+
+                <div class="cuadricula-servicios">
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">
+                            <i class="bi bi-tools" aria-hidden="true"></i>
+                        </div>
+                        <h3>Reparaciones</h3>
+                        <p>Diagnóstico y reparación de todo tipo de averías mecánicas y eléctricas.</p>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">
+                            <i class="bi bi-gear-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Mantenimiento</h3>
+                        <p>Revisiones periódicas, cambios de aceite, filtros y puesta a punto.</p>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">
+                            <i class="bi bi-stars" aria-hidden="true"></i>
+                        </div>
+                        <h3>Personalización</h3>
+                        <p>Customización, accesorios y mejoras de rendimiento para tu moto.</p>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">
+                            <i class="bi bi-shield-check" aria-hidden="true"></i>
+                        </div>
+                        <h3>ITV y Pre-ITV</h3>
+                        <p>Preparación y acompañamiento para pasar la ITV sin problemas.</p>
+                    </article>
+                </div>
+
+                <p class="texto-centrado">
+                    <button class="boton boton-contorno boton-grande" onclick="desplazarASeccion('contacto')">
+                        Ver todos los servicios →
+                    </button>
+                </p>
+            </div>
+        </section>
+
+        <section id="nosotros" class="nosotros">
+            <div class="contenedor">
+                    <header class="encabezado-seccion">
+                        <h2 class="etiqueta-seccion">SOBRE NOSOTROS</h2>
+                    </header>
+                <div class="cuadricula-nosotros">
+                    <figure class="imagen-nosotros">
+                        <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1080&q=80" alt="Interior del taller de motos MotoTaller Tarragona">
+                    </figure>
+
+                    <article class="contenido-nosotros">
+                        <h2>Pasión por las motos desde 2009</h2>
+                        <p>
+                            MotoTaller Tarragona es un taller especializado en el mantenimiento, reparación y personalización de motocicletas de todas las marcas. Fundado en 2009, nos hemos consolidado como un referente en la comarca gracias a nuestro compromiso con la calidad y la satisfacción del cliente.
+                        </p>
+                        <p>
+                            Nuestro equipo está formado por mecánicos apasionados por el mundo de las dos ruedas, en constante formación para ofrecer siempre el mejor servicio utilizando las últimas técnicas y tecnologías del sector.
+                        </p>
+
+                        <ul class="lista-caracteristicas">
+                            <li>
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Mecánicos certificados y experimentados</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Equipamiento y herramientas de última generación</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Piezas originales y de calidad garantizada</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Presupuestos sin compromiso en 24h</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="llamada-accion">
+            <div class="contenedor">
+                <h2>¿Tu moto necesita atención?</h2>
+                <p>
+                    Contacta con nosotros y te daremos presupuesto sin compromiso en menos de 24 horas.
+                </p>
+                <button class="boton boton-blanco boton-grande" onclick="desplazarASeccion('contacto')">
+                    <i class="bi bi-telephone-fill" style="width: 20px; height: 20px; margin-right: 0.5rem;" aria-hidden="true"></i>
+                    Contactar Ahora
+                </button>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="contenedor">
+                <header class="encabezado-seccion">
+                    <p class="etiqueta-seccion">CONTACTO</p>
+                    <h2 class="titulo-seccion">¿Hablamos?</h2>
+                    <p class="descripcion-seccion">
+                        ¿Tienes alguna duda o quieres pedir cita? Contáctanos y te atenderemos lo antes posible.
+                    </p>
+                </header>
+
+                <div class="cuadricula-contacto">
+                    <section aria-label="Información de contacto del taller">
+                        <article class="tarjeta-info-contacto">
+                            <h3>Información de Contacto</h3>
+
+                            <div class="elemento-contacto">
+                                <div class="icono-contacto">
+                                    <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                </div>
+                                <div class="detalles-contacto">
+                                    <p>Carrer Adrià, 2</p>
+                                    <p class="texto-apagado">43004 Tarragona</p>
+                                </div>
+                            </div>
+
+                            <div class="elemento-contacto">
+                                <div class="icono-contacto">
+                                    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                </div>
+                                <div class="detalles-contacto">
+                                    <p>977 123 456</p>
+                                    <p class="texto-apagado">Lunes a Viernes</p>
+                                </div>
+                            </div>
+
+                            <div class="elemento-contacto">
+                                <div class="icono-contacto">
+                                    <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                </div>
+                                <div class="detalles-contacto">
+                                    <p>info@mototaller.com</p>
+                                    <p class="texto-apagado">Respuesta en 24h</p>
+                                </div>
+                            </div>
+
+                            <div class="elemento-contacto">
+                                <div class="icono-contacto">
+                                    <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                </div>
+                                <div class="detalles-contacto">
+                                    <p>Horario</p>
+                                    <p class="texto-apagado">Lun-Vie: 9:00 - 19:00</p>
+                                    <p class="texto-apagado">Sáb: 9:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <figure class="contenedor-mapa">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d893.6661854226892!2d1.2532127540865037!3d41.11437778276888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fd11c9d8916b%3A0x6644efa3c4050e2f!2sCasa%20Sala!5e0!3m2!1ses!2ses!4v1765018231982!5m2!1ses!2ses"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Ubicación del taller"
+                            ></iframe>
+                        </figure>
+                    </section>
+
+                    <section class="tarjeta-formulario-contacto" aria-label="Formulario de contacto">
+                        <h3>Envíanos un Mensaje</h3>
+
+                        <form id="formulario-contacto" onsubmit="manejarEnvio(event)">
+                            <div class="grupo-formulario">
+                                <label for="nombre" class="etiqueta-formulario">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" class="entrada-formulario" placeholder="Tu nombre" required>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="correo" class="etiqueta-formulario">Email *</label>
+                                <input type="email" id="correo" name="correo" class="entrada-formulario" placeholder="tu@email.com" required>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="telefono" class="etiqueta-formulario">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="entrada-formulario" placeholder="123 456 789">
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="mensaje" class="etiqueta-formulario">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" class="area-texto-formulario" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <div class="grupo-casilla">
+                                    <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                                    <label for="consentimiento">
+                                        He leído y acepto la <a href="#privacidad" onclick="desplazarASeccion('privacidad')">política de privacidad</a> y el tratamiento de mis datos personales *
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="boton boton-primario" style="width: 100%;">Enviar Mensaje</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="privacidad" class="privacidad">
+            <div class="contenedor">
+                <header class="encabezado-privacidad">
+                    <div class="icono-privacidad">
+                        <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+                    </div>
+                    <h2 class="titulo-seccion">Política de Privacidad</h2>
+                    <p class="texto-apagado">Última actualización: 25 de noviembre de 2024</p>
+                </header>
+
+                <article class="contenido-privacidad">
+                  <h3>Aviso legal</h3>
+                    <section class="seccion-privacidad">
+                        <h3>1. Responsable del Tratamiento</h3>
+                        <p>
+                            <strong>Identidad:</strong> MotoTaller Tarragona<br>
+                            <strong>Dirección:</strong> Carrer Adrià, 2 43004 Tarragona<br>
+                            <strong>Email:</strong> info@mototaller.com<br>
+                            <strong>Teléfono:</strong> 977 123 456
+                        </p>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>2. Finalidad del Tratamiento</h3>
+                        <p>Los datos personales que nos proporciones a través de los formularios de contacto serán tratados con las siguientes finalidades:</p>
+                        <ul>
+                            <li>Gestionar y responder a tus consultas y solicitudes</li>
+                            <li>Gestionar citas y servicios de taller</li>
+                            <li>Enviarte información comercial sobre nuestros servicios (previa autorización)</li>
+                            <li>Cumplir con las obligaciones legales aplicables</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>3. Base Legal</h3>
+                        <p>La base legal para el tratamiento de tus datos es:</p>
+                        <ul>
+                            <li>El consentimiento del interesado al aceptar la política de privacidad</li>
+                            <li>La ejecución de un contrato en el que el interesado es parte</li>
+                            <li>El interés legítimo del responsable</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>4. Conservación de Datos</h3>
+                        <p>
+                            Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o durante los años necesarios para cumplir con las obligaciones legales. Una vez cumplida la finalidad para la que fueron recabados, los datos serán eliminados de forma segura.
+                        </p>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>5. Destinatarios</h3>
+                        <p>
+                            Tus datos no serán cedidos a terceros salvo obligación legal. No realizamos transferencias internacionales de datos.
+                        </p>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>6. Derechos de los Interesados</h3>
+                        <p>Según el RGPD, puedes ejercer los siguientes derechos:</p>
+                        <ul>
+                            <li><strong>Derecho de acceso:</strong> Conocer qué datos estamos tratando</li>
+                            <li><strong>Derecho de rectificación:</strong> Corregir datos inexactos</li>
+                            <li><strong>Derecho de supresión:</strong> Solicitar la eliminación de tus datos</li>
+                            <li><strong>Derecho de limitación:</strong> Solicitar la limitación del tratamiento</li>
+                            <li><strong>Derecho de portabilidad:</strong> Recibir tus datos en formato estructurado</li>
+                            <li><strong>Derecho de oposición:</strong> Oponerte al tratamiento de tus datos</li>
+                        </ul>
+                        <p>Para ejercer estos derechos, puedes contactarnos en <a href="mailto:info@mototaller.com" style="color: var(--primario);">info@mototaller.com</a>. También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
+                        </p>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>7. Medidas de Seguridad</h3>
+                        <p>Hemos adoptado medidas técnicas y organizativas apropiadas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
+                        </p>
+                    </section>
+
+                    <section class="seccion-privacidad">
+                        <h3>8. Modificaciones</h3>
+                        <p>Nos reservamos el derecho de modificar la presente política de privacidad para adaptarla a novedades legislativas o jurisprudenciales. Te recomendamos revisar periódicamente esta página.
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <section class="contenido-pie" aria-label="Información adicional del taller">
+            <div class="contenedor">
+                <ul class="cuadricula-pie">
+                    <li class="elemento-pie">
+                        <div class="icono-pie">
+                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Carrer Adrià, 2 43004 Tarragona</p>
+                        </div>
+                    </li>
+
+                    <li class="elemento-pie">
+                        <div class="icono-pie">
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>977 123 456</p>
+                        </div>
+                    </li>
+
+                    <li class="elemento-pie">
+                        <div class="icono-pie">
+                            <i class="bi bi-clock-history" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun-Vie: 9:00 - 19:00</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="pie-inferior" aria-label="Derechos y enlaces legales">
+            <div class="contenedor">
+                <div class="contenido-pie-inferior">
+                    <p>© 2024 MotoTaller Tarragona. Todos los derechos reservados.</p>
+                    <nav class="enlaces-pie" aria-label="Enlaces legales">
+                        <a href="#privacidad" onclick="desplazarASeccion('privacidad')">Política de Privacidad</a>
+                        <a href="#privacidad" onclick="desplazarASeccion('privacidad')">Aviso Legal</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <aside class="banner-cookies" id="banner-cookies" aria-label="Aviso de cookies">
+        <div class="contenido-cookies">
+            <p>
+                Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a href="#privacidad" onclick="desplazarASeccion('privacidad')" style="color: var(--primario); text-decoration: underline;">Política de Privacidad</a>.
+            </p>
+            <div class="botones-cookies">
+                <button class="boton boton-primario" onclick="aceptarCookies()">Aceptar Cookies</button>
+                <button class="boton boton-contorno" onclick="rechazarCookies()">Rechazar</button>
+            </div>
+        </div>
+    </aside>
+
+    <div class="notificacion" id="notificacion" role="status" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
